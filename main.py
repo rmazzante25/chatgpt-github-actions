@@ -42,7 +42,7 @@ def files():
      
             response = openai.Completion.create(
                 engine=args.openai_engine,
-                prompt=(f"Por favor revisar seguinte codigo em sua clareza, eficiencia, e adesão das melhores praticas. Destaque quaisquer áreas que precisam de melhorias, sugira otimizações e anote possíveis bugs ou vulnerabilidades de segurança. Além disso, considere a capacidade de manutenção e escalabilidade do código.:\n ### Code \n```{content}```"),
+                prompt=(f"Por favor pode revisar seguinte codigo em sua clareza, eficiencia, e adesão das melhores praticas. Destaque quaisquer áreas que precisam de melhorias, sugira otimizações e anote possíveis bugs ou vulnerabilidades de segurança. Além disso, considere a capacidade de manutenção e escalabilidade do código.:\n ### Code \n```{content}```"),
                 temperature=float(args.openai_temperature),
                 max_tokens=int(args.openai_max_tokens)
             )
